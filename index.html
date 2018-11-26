@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <title>驗證表單</title>
+</head>
+    <style>
+        
+    </style>
+
+<body>
+    <div id="container">
+        <form id="form-input" action="" method="POST">
+            <label for="name">姓 名</label>
+            <input id="name" class="input-style input-width" type="text" name="name" value="" placeholder="請輸入您的姓名">
+
+            <label for="email-address">電子信箱</label>
+            <input id="email-address" class="input-style input-width" type="text" name="email" value="" placeholder="請輸入您的E-mail">
+
+            <label for="mail-gender">性 別</label>
+            <select class="input-style name="gender" id="mail-gender">
+                <option  value="male">男性</option>
+                <option  value="female">女性</option>
+            </select>
+
+            <label for="pass1">密 碼</label>
+            <input id="pass1" class="input-style input-width" type="password" name="pass1" placeholder="密 碼">
+
+            <label for="pass2">確認密碼</label>
+            <input id="pass2" class="input-style input-width" type="password" name="pass2" placeholder="確認密碼">
+
+            <textarea name="message" class="input-style" id="message" cols="80" rows="10" placeholder="請輸入您的訊息"></textarea>
+
+            <button id="submitBtn" class="input-style" type="submit" name="submit">送出</button>
+            
+        </form>
+
+        <div id="error"></div>
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

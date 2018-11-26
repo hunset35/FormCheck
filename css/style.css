@@ -1,0 +1,82 @@
+body{
+    background: url(../bg-login.png)   no-repeat;
+    background-size: cover;
+}
+
+#container{
+    padding-top: 60px;
+    width: 523px;
+    margin: 0 auto;
+    font-family: "Helvetica Neue", "Helvetica" ,微軟正黑體, "Arial"
+}
+
+.input-style{
+    border-radius: 5px;
+    border: 1px solid grey;
+    font-size: 1.1em;
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+
+.input-width{
+    width: 300px;
+    height: 40px;
+}
+
+#mail-gender {
+    width: 323px;
+    height: 40px;
+    
+}
+
+label {
+    width: 200px;
+    font-size: 1.2em;
+    float: left;
+    line-height: 40px;
+}
+
+#message{
+    width: 500px;
+    padding-top: 15px;
+}
+
+#submitBtn{
+    background-color: #AA47BC;
+    color: #fff;
+    width: 523px;
+    height: 40px;
+    padding: 0;
+    transition: 0.3s;
+}
+#submitBtn:hover{
+    background-color: rgb(167, 73, 255);
+}
+
+#error{
+    color: red;
+}
+
+@media (max-width: 450px){
+    body{
+        background: url(../bg-login.jpg)   no-repeat;
+    }
+    #container{
+        width: 100%;
+        padding-top: 60px;;
+    }
+    #message{
+        width: 94%;
+    }
+    #submitBtn{
+        width: 100%;
+    }
+}
+@media (max-width: 1370px){
+    body{
+        background-size: initial;
+    }
+    /* #container{
+        padding-top: 200px;
+    } */
+}
